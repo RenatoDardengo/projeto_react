@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* Divisão das colunas */
+    grid-template-rows: 80px 1fr;
+    /* Divisão das linhas */
+    height: 100vh;
+    /* Definir altura total da página */
+}
+
+@media (max-width: 600px) {
+    .sideBar{
+        display: none;
+    }
+    .LogoPanel{
+        display: none;
+    }
+    .mainPanel {
+            grid-column: 1 / span 2;
+            /* Ocupa duas colunas */
+    }
+    .navBar{
+        grid-column: 1 / span 2;
+    }
+}
