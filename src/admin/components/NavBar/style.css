@@ -1,5 +1,24 @@
-.navBar{
+.navbar{
     background-color: rgb(240, 240, 240);
     display: flex;
     justify-content: space-between;
 }
+
+.navbar img {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.menu-icon {
+    /* Estilo padrão da imagem do ícone */
+    cursor: pointer;
+    /* Restante do estilo da imagem do ícone */
+  }
+  
+  .menu-icon.expanded {
+    /* Estilo para o ícone quando o menu lateral estiver expandido */
+    /* Exemplo: */
+    transform: rotate(90deg);
+    /* Restante do estilo do ícone expandido */
+  }

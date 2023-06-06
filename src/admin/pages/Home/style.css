@@ -5,17 +5,18 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 250px 1fr;
     /* Divisão das colunas */
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 70px 1fr;
     /* Divisão das linhas */
     height: 100vh;
     /* Definir altura total da página */
 }
 
-@media (max-width: 600px) {
-    .sideBar{
-        display: none;
+@media (max-width: 1000px) {
+    .sidebar{
+        /*display: none;*/
+        width: 40px;
     }
     .LogoPanel{
         display: none;
@@ -24,7 +25,7 @@
             grid-column: 1 / span 2;
             /* Ocupa duas colunas */
     }
-    .navBar{
+    .navbar{
         grid-column: 1 / span 2;
     }
 }
