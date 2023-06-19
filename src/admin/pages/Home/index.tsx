@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import './style.css'
 import SideBar from '../../components/SideBar';
 import NavBar from '../../components/NavBar';
@@ -7,14 +8,19 @@ import LogoPanel from '../../components/LogoPanel';
 
 
 const Home=()=>{
+    const [isMenuClicked, setIsMenuClicked] = useState(false);
+
+    const handleMenuClick = () => {
+      setIsMenuClicked(!isMenuClicked);
+    };
 
     return (
-        <div className='container'>
-            <LogoPanel/>
-            <NavBar/>
-            <SideBar/>
-            <MainPanel/>
-        </div>
+        <div className={`container ${isMenuClicked ? 'menu-clicked' : ''}`}>
+      <LogoPanel />
+      <NavBar onMenuClick={handleMenuClick} />
+      <SideBar />
+      <MainPanel />
+    </div>
     );
 }
 

@@ -1,6 +1,16 @@
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 50px 1fr;
     height: 100vh;
+  }
+
+  @media (max-width: 800px) {
+    .sideBar {
+        display: none;
+      }
     
-}
+      .mainPanel {
+        grid-column: 1 / span 2; /* Ocupa duas colunas */
+      }
+  }

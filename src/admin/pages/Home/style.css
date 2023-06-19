@@ -12,20 +12,39 @@
     height: 100vh;
     /* Definir altura total da página */
 }
+.container.menu-clicked .container {
+    grid-template-columns: 80px auto;
+    grid-column: 2;
+
+
+}
+
+.container.menu-clicked .LogoPanel{
+    display: none;
+}
+.container.menu-clicked .mainPanel{
+    grid-column: 2;
+}
+.container.menu-clicked .navbar{
+    grid-column: 1 / span 2;
+}
+
+
 
 @media (max-width: 1000px) {
-    .sidebar{
-        /*display: none;*/
-        width: 40px;
-    }
+    .container {
+        grid-template-columns: 80px auto; /* Alterado para 40px e auto */
+      }
+  
     .LogoPanel{
         display: none;
     }
     .mainPanel {
-            grid-column: 1 / span 2;
-            /* Ocupa duas colunas */
+        grid-column: 2;
+            
     }
     .navbar{
         grid-column: 1 / span 2;
     }
+   
 }
