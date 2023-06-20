@@ -6,36 +6,13 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(49, 58, 70);
-    padding: 10px;
+    padding-top: 50px;
+    
     
 }
 
-.sidebar_item{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    height: 40px;
-    transition: background-color 0.3s ease;
-}
-.sidebar_item span{
-    margin-left: 20px;
-}
-
-.sidebar_item img{
-    width: 20px;
-    height: 20px;
-    margin-left: 20px;
-}
-.sidebar_item:hover{
-
-    background-color: rgb(90, 96, 105);
-    cursor: pointer;
-}
 
 
-@media (max-width:1000px){
-    .sidebar_item span{
-        display: none;
-    }
-}
+
+
 
