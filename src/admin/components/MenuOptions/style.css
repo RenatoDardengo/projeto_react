@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
 .sidebar_item {
     display: flex;
     align-items: center;
@@ -19,7 +26,7 @@
 
 .sidebar_item:hover {
 
-    background-color: rgb(90, 96, 105);
+    background-color: rgb(22,119,255);
     cursor: pointer;
 }
 .dropdown_menu {
@@ -27,14 +34,29 @@
     top: 100%;
     /* Define a posição abaixo do elemento pai */
     left: 0;
-    background-color: rgb(90, 96, 105);
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 200px;
+    background-color: rgb(0,11,22);
+    border: none;
+   
+    width: 250px;
+    
+}
+.dropdown_menu li{
+    padding-left: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dropdown_menu li:hover {
+    background-color: rgb(22,119,255);
+    cursor: pointer;
 }
 .empty_space {
-    height: 70px;
+    height: 90px;
     /* Ajuste a altura conforme necessário */
+}
+.sidebar_item.selected {
+    background-color: rgb(22,119,255);
+    cursor: pointer;
 }
 
 
